@@ -1,0 +1,19 @@
+maxPerMachine: 10
+allMachines: 'all'
+email_message_default: "projeto:{{ var_project }} <br> nome:{{ var_jobname }} <br> filtro:{{ var_hosts }}"
+email_message_begin: "Estamos iniciando o processo agora <br> <br> <br> {{ email_message_default }}"
+email_message_failed: "Falhou, necessário acionar o plantão <br> <br> <br> {{ email_message_default }}"
+email_message_mix: "Processo concluido , segue status <br> <br> <br> {{ email_message_default }}"
+email_message_ok: "Tudo ok, necessário validar o processo abaixo <br> <br> <br> {{ email_message_default }}"
+email_subject_begin: "Inicio do job:{{ var_jobname }}"
+email_subject_failed: "Falhou !!!! job:{{ var_jobname }}"
+email_subject_ok: "OK Termino do job:{{ var_jobname }}"
+email_subject_mix: "Termino do job:{{ var_jobname }}"
+email_to_fail: "test@test.com.br"
+email_to_validate: "test2@test.com.br"
+email_to_report: "test3@test.com.br"
+sent_email: yes
+open_warp: no
+
+script_ticket: "/etc/ansible/roles/CommonTasks/scripts/ManageWarpTicket/ticket.py"
+script_report: "/etc/ansible/roles/CommonTasks/scripts/ManageReport/manage.py"

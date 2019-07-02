@@ -1,0 +1,11 @@
+[linux-example]
+192.168.0.2
+192.168.0.3
+
+[windowsdomain-example]
+192.168.0.4
+192.168.0.5
+
+[windowslocal-example]
+192.168.0.6
+192.168.0.7
